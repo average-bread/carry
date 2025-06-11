@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "carry",
+  "version": "${version}",
+
+  "name": "Carry",
+  "description": "Carry",
+  "authors": [
+    "Bread (with a lot of help)"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"cursedbread.carry.CarryMain"
+    ],
+		"beforeGameStart": [
+			"cursedbread.carry.CarryMain"
+		],
+		"afterGameStart": [
+			"cursedbread.carry.CarryMain"
+		],
+		"recipesReady": [
+			"cursedbread.carry.CarryMain"
+		]
+	},
+  "mixins": [
+      "carry.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
