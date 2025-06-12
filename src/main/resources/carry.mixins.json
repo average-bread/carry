@@ -4,11 +4,14 @@
   "package": "cursedbread.carry.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CarryMixin"
   ],
   "client": [
+    "PlayerControllerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "server": [
+    "ServerPlayerControllerMixin"
+  ]
 }
