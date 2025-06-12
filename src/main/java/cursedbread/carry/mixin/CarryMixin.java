@@ -21,6 +21,7 @@ public class CarryMixin {
 	public void onBlockRightClicked(World world, int x, int y, int z, Player player, Side side, double xHit, double yHit, CallbackInfoReturnable<Boolean> cir) {
 		if (player.getHeldItem() == null && player.isSneaking()){
 			player.setHeldObject(new CarriedBlock(player, world.getBlockId(x, y, z), world.getBlockMetadata(z, y, z), null));
+			player.swingItem();
 			world.setBlockWithNotify(x, y, z, 0);
 		}
 	}
